@@ -10,7 +10,12 @@ class Library:
         self.list_of_users.append(user)
 
     def list_available_books(self):
-        return self.list_of_books
+        available_books = []
+        for book in self.list_of_books:
+            if book.is_available:
+                available_books.append(book)
+            return available_books
+                
 
     def search_book(self,title,author):
         for book in self.list_of_books:
