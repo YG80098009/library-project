@@ -30,4 +30,13 @@ class Library:
         else:
             print(f"there is no book or user")
 
+    def return_book(self, user_id, book_isbn):
+        data_from_validation = self.validate_user_book(user_id, book_isbn)
+        if data_from_validation[0]:
+            data_from_validation[1].remove(data_from_validation[2])
+            data_from_validation[2].is_available = True
+            print("return succesfully")
+        else:
+            print("there in no user o book")
+    
     
