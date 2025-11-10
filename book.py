@@ -1,5 +1,5 @@
 class Book:
-    def __init__(self, title, author, isbn, is_available):
+    def __init__(self, title, author, isbn, is_available = True):
         self.title = title
         self.author = author
         self.isbn = isbn
@@ -11,4 +11,5 @@ Author: {self.author}
 isbn: {self.isbn}
 Is available?: {self.is_available}"""
     
-    
+# book1 = Book("kjh", "kjh", 32165, True)
+# print(book1)
