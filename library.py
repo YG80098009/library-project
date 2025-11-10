@@ -12,3 +12,11 @@ class Library:
     def list_available_books(self):
         return self.list_of_books
 
+    def search_book(self,title,author):
+        for book in self.list_of_books:
+            if book.title == title:
+                return book
+            elif book.author == author:
+                return book
+            else:
+                print("not found")
