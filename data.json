@@ -1,0 +1,13 @@
+list_of_books = '''
+{
+    "fiction_books": [
+        {"title": "super man",
+    "author": "yosi",
+"isbn": 321459,
+"is_available": True},
+{"title": "bat man",
+    "author": "yosi",
+"isbn": 327859,
+"is_available": True}
+    ]
+}'''
