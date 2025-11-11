@@ -1,10 +1,23 @@
+import json
+
 class Library:
     def __init__(self):
-        self.list_of_books = []
-        self.list_of_users = []
+        self.list_of_books = self.load_books()
+        self.list_of_users = self.load_users()
         
+    def load_books(self):
+        with open("books.json", "r") as f:
+            books = json.load(f)
+        return books
+    
+    def load_users(self):
+        with open("users.json", "r") as f:
+            users = json.load(f)
+        return users
+    
     def add_book(self,book):
         self.list_of_books.append(book)
+
 
     def add_user(self,user):
         self.list_of_users.append(user)
