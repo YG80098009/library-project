@@ -4,4 +4,7 @@ class User:
         self.id = id
         self.borrowed_books = []
 
-User("ariel","12345")
+    def __str__(self):
+        return f"""name: {self.name}
+id: {self.id}
+borrowed_books: {self.borrowed_books}"""
